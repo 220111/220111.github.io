@@ -8,6 +8,14 @@ var flyBoxes = [];
 var flyBoxPause = 200;
 var flyBoxColors = [];
 
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   origin = createVector(windowWidth/2, windowHeight/2);
