@@ -1,19 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600&family=Ubuntu+Mono:wght@700&display=swap');
+
+
 :root{
     --vertical-space: 2rem;
     --horizontal-space: 3rem;
 
+    /* --background-color: #5F4A8C; */
+    /* --main-color: antiquewhite; */
+    --background-color: #4F495C;
+    --main-text-color: #cbc5d8;
+    --pop-color: #8a74b9;
+    --link-color: #906DDB;
 }
 
-
+main{
+    background-color: var(--background-color);
+}
 
 
 body{
     font-size: 18px;
     line-height: 1.5;
+    font-family: 'Red Hat Display', sans-serif;
+    color:var(--main-text-color);
+
+    background-color: var(--background-color);
+    /* background-image: url("https://www.transparenttextures.com/patterns/gplay.png"); */
+    background-image: url("../images/cubes.png");
+}
+
+a{
+    color: var(--main-text-color);
+    font-size: 1.2em;
+}
+
+a:hover{
+    color: var(--link-color);
 }
 
 h1, h2, h3 {
     line-height: 1.2;
+    font-family: 'Ubuntu Mono', monospace;
+    color: var(--main-text-color);
 }
 
 body#about img {
@@ -42,10 +70,10 @@ body{
 @media screen and (min-width: 25em) {
     body{
         display: grid;
-        grid-template-areas: "head head"
-                             "nav main"
-                             "foot foot";
-        grid-template-columns: 1fr 4fr;
+        grid-template-areas: "head head head"
+                             "nav main blank"
+                             "foot foot foot";
+        grid-template-columns: 2fr 8fr 1fr;
         grid-template-rows: auto 1fr auto;
     }
     
