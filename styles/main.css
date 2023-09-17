@@ -47,7 +47,7 @@ h1, h2, h3 {
 }
 
 body#about img {
-    height: 20em;
+    width: 15em;
 }
 
 body > *{
@@ -134,4 +134,8 @@ body#portfolio ul#portfolioItems {
 
 body#portfolio ul#portfolioItems li img{
     max-width: 100%;
+}
+
+footer a {
+    font-size: 10pt;
 }
