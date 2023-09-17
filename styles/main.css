@@ -69,7 +69,7 @@ body{
     grid-template-rows: auto auto 1fr auto;
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 35em) {
     body{
         display: grid;
         grid-template-areas: "head head head"
@@ -110,7 +110,7 @@ header, footer{
 footer h1, header h1{
     margin: 0;
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 35em) {
     body#portfolio > main{
         max-width: 50em;
     }
@@ -125,7 +125,7 @@ body#portfolio ul#portfolioItems {
 }
 
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 35em) {
     body#portfolio ul#portfolioItems li{
         flex-basis: 46%;
         padding-right: 2%;
