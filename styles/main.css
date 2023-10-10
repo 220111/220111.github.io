@@ -17,6 +17,7 @@
 
 main{
     background-color: var(--background-color);
+    border-radius: 2rem;
 }
 
 
@@ -94,6 +95,20 @@ body > nav ul{
     padding: 0;
 }
 
+body > nav ul li{
+    
+    margin-top: 1rem;
+}
+
+body > nav ul a{
+    text-decoration: none;
+    display: block;
+    padding: .5rem;
+    width: 100%;
+    border: var(--pop-color) solid 2px;
+    border-radius: 1rem;
+}
+
 body > main {
     grid-area: main;
 }
@@ -124,16 +139,28 @@ body#portfolio ul#portfolioItems {
     padding: 0;
 }
 
+body#portfolio ul#portfolioItems li{
+    border: var(--pop-color) solid 2px;
+    margin: 5px;
+}
+
 
 @media screen and (min-width: 35em) {
     body#portfolio ul#portfolioItems li{
         flex-basis: 46%;
         padding-right: 2%;
+        border: var(--pop-color) solid 2px;
+        margin: 5px;
     }
 }
 
+body#portfolio ul#portfolioItems li{
+    text-align: center;
+    border-radius: .5rem;
+}
+
 body#portfolio ul#portfolioItems li img{
-    max-width: 100%;
+    max-width: 20rem;
 }
 
 footer a {
