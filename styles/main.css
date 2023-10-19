@@ -20,8 +20,13 @@ main{
     border-radius: 2rem;
 }
 
-
 body{
+    background-color: var(--pop-color);
+}
+
+
+#body{
+    margin-bottom: 3rem;
     font-size: 18px;
     line-height: 1.5;
     font-family: 'Red Hat Display', sans-serif;
@@ -47,11 +52,11 @@ h1, h2, h3 {
     color: var(--main-text-color);
 }
 
-body#about img {
+#about #body img {
     width: 15em;
 }
 
-body > *{
+#body > *{
     padding-left: var(--horizontal-space);
     padding-right: var(--horizontal-space);
 }
@@ -60,7 +65,7 @@ p{
     max-width: 50em;
 }
 
-body{
+#body{
     display: grid;
     grid-template-areas: "head head"
                          "nav nav"
@@ -71,7 +76,7 @@ body{
 }
 
 @media screen and (min-width: 35em) {
-    body{
+    #body{
         display: grid;
         grid-template-areas: "head head head"
                              "nav main blank"
@@ -82,25 +87,25 @@ body{
     
 }
 
-body > header{
+#body > header{
     grid-area: head;
 }
 
-body > nav{
+#body > nav{
     grid-area: nav;
 }
 
-body > nav ul{
+#body > nav ul{
     list-style-type: none;
     padding: 0;
 }
 
-body > nav ul li{
+#body > nav ul li{
     
     margin-top: 1rem;
 }
 
-body > nav ul a{
+#body > nav ul a{
     text-decoration: none;
     display: block;
     padding: .5rem;
@@ -109,11 +114,11 @@ body > nav ul a{
     border-radius: 1rem;
 }
 
-body > main {
+#body > main {
     grid-area: main;
 }
 
-body > footer {
+#body > footer {
     grid-area: foot;
 }
 
@@ -125,13 +130,14 @@ header, footer{
 footer h1, header h1{
     margin: 0;
 }
+
 @media screen and (min-width: 35em) {
-    body#portfolio > main{
+    #portfolio > #body > main{
         max-width: 50em;
     }
 }
 
-body#portfolio ul#portfolioItems {
+#portfolio > #body ul#portfolioItems {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
@@ -139,14 +145,14 @@ body#portfolio ul#portfolioItems {
     padding: 0;
 }
 
-body#portfolio ul#portfolioItems li{
+#portfolio > #body ul#portfolioItems li{
     border: var(--pop-color) solid 2px;
     margin: 5px;
 }
 
 
 @media screen and (min-width: 35em) {
-    body#portfolio ul#portfolioItems li{
+    #portfolio > #body ul#portfolioItems li{
         flex-basis: 46%;
         padding-right: 2%;
         border: var(--pop-color) solid 2px;
@@ -154,12 +160,12 @@ body#portfolio ul#portfolioItems li{
     }
 }
 
-body#portfolio ul#portfolioItems li{
+#portfolio > #body ul#portfolioItems li{
     text-align: center;
     border-radius: .5rem;
 }
 
-body#portfolio ul#portfolioItems li img{
+#portfolio > #body ul#portfolioItems li img{
     max-width: 20rem;
 }
 
