@@ -58,6 +58,10 @@ h1, h2, h3 {
     width: 15em;
 }
 
+/* #about #body iframe {
+    max-width: 50em;
+} */
+
 #body > *{
     padding-left: var(--horizontal-space);
     padding-right: var(--horizontal-space);
@@ -83,7 +87,7 @@ p{
         grid-template-areas: "head head head"
                              "nav main blank"
                              "foot foot foot";
-        grid-template-columns: 1fr auto 1fr;
+        grid-template-columns: 1fr 4fr 1fr;
         grid-template-rows: auto 1fr auto;
     }
     
